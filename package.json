@@ -1,0 +1,44 @@
+{
+    "name": "routing",
+    "version": "1.0.0",
+    "description": "Express.js routing practice project",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "dev": "nodemon --watch src --exec ts-node src/index.ts",
+        "build": "tsc",
+        "start": "node dist/index.js",
+        "format": "prettier --write \"src/**/*.ts\"",
+        "format:check": "prettier --check \"src/**/*.ts\"",
+        "lint": "eslint src --ext .ts",
+        "lint:fix": "eslint src --ext .ts --fix",
+        "migrate": "prisma migrate dev",
+        "migrate:init": "prisma migrate dev --name init",
+        "studio": "prisma studio",
+        "generate": "prisma generate",
+        "validate": "tsc --noEmit"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@prisma/client": "^7.4.0",
+        "cors": "^2.8.6",
+        "dotenv": "^17.2.4",
+        "express": "^5.2.1"
+    },
+    "devDependencies": {
+        "@types/cors": "^2.8.17",
+        "@types/express": "^5.0.6",
+        "@types/node": "^25.2.2",
+        "@typescript-eslint/eslint-plugin": "^8.55.0",
+        "@typescript-eslint/parser": "^8.55.0",
+        "eslint": "^9.39.2",
+        "eslint-config-prettier": "^10.1.8",
+        "nodemon": "^3.1.11",
+        "prettier": "^3.8.1",
+        "prisma": "^7.4.0",
+        "ts-node": "^10.9.2",
+        "typescript": "^5.9.3"
+    }
+}
